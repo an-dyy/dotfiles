@@ -1,0 +1,48 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_bspwm:
+    src: config/bspwm
+    dst: ~/.config/bspwm
+  d_sxhkd:
+    src: config/sxhkd
+    dst: ~/.config/sxhkd
+  d_nitrogen:
+    src: config/nitrogen
+    dst: ~/.config/nitrogen
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  f_zshrc:
+    src: dotfiles/zshrc
+    dst: ~/.dotfiles/zshrc
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+profiles:
+  arch:
+    dotfiles:
+    - d_bspwm
+    - d_sxhkd
+    - d_nitrogen
+    - d_ranger
+    - d_polybar
+    - f_zshrc
+    - d_kitty
+    - d_nvim
+    - d_rofi
+    - d_picom

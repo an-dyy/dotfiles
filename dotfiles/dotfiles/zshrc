@@ -1,0 +1,22 @@
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.poetry/bin:$PATH"
+export EDITOR=nvim
+
+source ~/dotfiles/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle pip
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle command-not-found
+
+antigen theme https://github.com/0i0/0i0.zsh-theme
+antigen apply
+
+alias ls="ls -a"
+alias commit="git commit"
+alias clone="git clone"
+alias pull="git pull"
+
