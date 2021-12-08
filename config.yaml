@@ -33,6 +33,9 @@ dotfiles:
   d_picom:
     src: config/picom
     dst: ~/.config/picom
+  f_zshrc_1:
+    src: zshrc
+    dst: ~/.zshrc
 profiles:
   arch:
     dotfiles:
@@ -46,3 +49,4 @@ profiles:
     - d_nvim
     - d_rofi
     - d_picom
+    - f_zshrc_1
